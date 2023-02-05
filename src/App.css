@@ -1,0 +1,947 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{
+  text-decoration: none;
+  text-transform: none;
+}
+.App{
+  margin-top: 80px;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: 'Do Hyeon', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: none;
+  text-decoration: none;
+  height: 100%;
+
+}
+.navBar{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.nav-item {  
+  text-decoration: none;
+  margin-right: 20px;
+}
+/*//////////////////DeskTop Home페이지  start./////////////// */
+.HomePage-wrap > h2{
+  margin: 1%;
+font-size: 3rem;
+}
+
+.HomePage-under-line{
+  padding-left: 2%;
+}
+.HomePage-under-line>h2{
+  margin-top:2%;
+}
+
+.banner {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position-y: 50%; */
+  
+  /* background-position-x: 50%;
+  background-position-y: 500px; */
+}
+.banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(to right, black, transparent);
+}
+.banner-info {
+  width: 50%;
+  margin-left: 30px;
+  z-index: 1;
+}
+.banner-info > h1{
+  font-size: 5rem;
+}
+.banner-info > p{
+  font-size: 2rem;
+}
+.HomePageCard-wrap {
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 250px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  
+  padding: 5%;
+}
+.overlay:hover {
+  opacity: 1;
+}
+/* .react-multi-carousel-item:hover .HomePageCard-wrap {
+  transform: scale(1.3);
+  width: 600px;
+  height: 300px;
+} */
+
+.HomePageCard-learn-more{
+  /* position: absolute; */
+  bottom: 0;
+  right: 10%;
+  font-size: 1.5rem;
+}
+
+/*//////////////////DeskTop Home페이지  end./////////////// */
+
+
+
+
+
+
+/*//////////////////DeskTop Movies페이지  start./////////////// */
+.moviesPageCardWrap {
+  display: flex;
+  flex-wrap: wrap;  
+  min-height: 100vh;
+  padding-top: 5%;
+  border-radius: 16px;
+}
+.moviesPageCard::after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent); */
+}
+.moviesPageCard {
+  position: relative;
+  /* width: 24%; */
+  width: 300px;
+  height: 550px;
+  border: 1px solid black;
+  margin: 2% 0.5%;
+  border-radius: 16px;
+
+}
+.moviesPageCard-content{
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  left: 0;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5%;
+}
+.moviesPageCard-content>div{
+  margin: 1% 0;
+  /* border: 1px solid red; */
+}
+.moviesPageCard-title{
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.moviesPageCard-release-date{
+font-size: 1.2rem;
+
+}
+
+.moviesPageCard-genre{
+font-size: 1.5rem;
+margin-bottom: 5000px;
+width: 50%;
+}
+
+.moviesPageCard-overview {
+  font-size: 1rem;
+  overflow: hidden;
+  max-height: 50%;
+  width: 50%;
+  text-overflow: ellipsis;
+}
+.moviesPageCard-vote{
+font-size: 1rem;
+}
+.moviesPageCard-learn-more{
+  position: absolute;
+  bottom: 0;
+  right: 6%;
+  font-size: 1.5rem;
+}
+/*//////////////////DeskTop Movies페이지  end./////////////// */
+
+
+
+/*//////////////////DeskTop MovieDetail페이지  start./////////////// */
+
+.MovieDetailPage-wrap {
+  width: 100vw;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MovieDetailPage-first-line{
+  padding-top: 5%;
+}
+
+.MovieDetailPage-Img{
+  width: 100%;
+  height: 900px;
+  border-radius: 16px;
+}
+
+.MovieDetailPage-genre > span{
+  font-size: 1.3rem;
+  margin: 0 0.5% 1%;
+}
+
+.MovieDetailPage-title{
+  font-size: 4rem;
+}
+
+.MovieDetailPage-release-date{
+  font-size: 1.3rem;
+}
+
+.MovieDetailPage-modal > button{
+  font-size: 1.5rem;
+}
+
+.MovieDetailPage-review{
+  margin-top: 5%;
+}
+
+.MovieDetailPage-review  .MovieDetailPage-review-content{
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  max-height: 500px;
+}
+
+.MovieDetailPage-second-line{
+  padding:5%;
+}
+.recommendedMovieCard {
+  display: block;
+  width: 420px;
+  height: 200px;
+  border-radius: 16px;
+}
+.recommendedMovieCardOverlay {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 50%;
+  border-radius: 16px;
+}
+.recommendedMovieCardOverlay:hover {
+  opacity: 1;
+}
+/*//////////////////DeskTop MovieDetail페이지  start./////////////// */
+
+
+/*//////////////////DeskTop MovieDetailCard페이지  start./////////////// */
+.MovieDetailMoveCard-wrap > h2{
+  margin: 1%;
+font-size: 3rem;
+}
+.MovieDetailMoveCard-wrap {
+  display: block;
+  position: relative;
+  width: 350px;
+  height: 250px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MovieDetailMoveCard-overlay {
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  
+  padding: 5%;
+}
+.MovieDetailMoveCard-overlay:hover {
+  opacity: 1;
+}
+/* .react-multi-carousel-item:hover .HomePageCard-wrap {
+  transform: scale(1.3);
+  width: 600px;
+  height: 300px;
+} */
+
+.MovieDetailMoveCard-learn-more{
+  position: absolute;
+  bottom: 1%;
+  right: 5%;
+  font-size: 1.5rem;
+}
+
+
+.modal-content > div{
+  background-color: rgba(0, 0, 0, 0.93);  
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+}
+.modal-content > .modal-body {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+} 
+/*//////////////////DeskTop MovieDetailCard페이지  end./////////////// */
+
+/* //////////////////////////// desktop 1025 ~ ///////////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* //////////////////////////// ~ tablet 1024 ///////////////////////////////////*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{
+  text-decoration: none;
+  text-transform: none;
+}
+.App{
+  margin-top: 80px;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: 'Do Hyeon', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: none;
+  text-decoration: none;
+  height: 100%;
+
+}
+.navBar{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.nav-item {  
+  text-decoration: none;
+  margin-right: 20px;
+}
+/*//////////////////DeskTop Home페이지  start./////////////// */
+.HomePage-wrap > h2{
+  margin: 1%;
+font-size: 3rem;
+color: red;
+}
+
+.HomePage-under-line{
+  padding-left: 2%;
+}
+.HomePage-under-line>h2{
+  margin-top:2%;
+}
+
+.banner {
+  /* width: 100%; */
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position-y: 50%; */
+}
+.banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(to right, black, transparent);
+}
+.banner-info {
+  width: 50%;
+  margin-left: 30px;
+  z-index: 1;
+}
+.banner-info > h1{
+  font-size: 4rem;
+}
+.banner-info > p{
+  font-size: 1.5rem;
+}
+.HomePageCard-wrap {
+  display: block;
+  position: relative;
+  width: 350px;
+  height: 220px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  
+  padding: 5%;
+}
+.overlay:hover {
+  opacity: 1;
+}
+/* .react-multi-carousel-item:hover .HomePageCard-wrap {
+  transform: scale(1.3);
+  width: 600px;
+  height: 300px;
+} */
+
+.HomePageCard-learn-more{
+  /* position: absolute; */
+  bottom: 0;
+  right: 10%;
+  font-size: 1.5rem;
+}
+
+/*//////////////////DeskTop Home페이지  end./////////////// */
+
+
+
+
+
+
+/*//////////////////DeskTop Movies페이지  start./////////////// */
+.moviesPageCardWrap {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding-top: 5%;
+  border-radius: 16px;
+}
+.moviesPageCard::after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent); */
+}
+.moviesPageCard {
+  position: relative;
+  height: 500px;
+  width: 275px;
+  border: 1px solid black;
+  margin: 2% 0.5%;
+  border-radius: 16px;
+
+}
+.moviesPageCard-content{
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  left: 0;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5%;
+}
+.moviesPageCard-content>div{
+  margin: 1% 0;
+  /* border: 1px solid red; */
+}
+.moviesPageCard-title{
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+.moviesPageCard-release-date{
+font-size: 1.2rem;
+
+}
+
+.moviesPageCard-genre{
+font-size: 1.25rem;
+width: 50%;
+}
+
+.moviesPageCard-overview {
+  font-size: 1rem;
+  overflow: hidden;
+  max-height: 50%;
+  width: 50%;
+  text-overflow: ellipsis;
+}
+.moviesPageCard-vote{
+font-size: 1rem;
+}
+.moviesPageCard-learn-more{
+  position: absolute;
+  bottom: 0;
+  right: 6%;
+  font-size: 1.5rem;
+}
+/*//////////////////DeskTop Movies페이지  end./////////////// */
+
+
+
+/*//////////////////DeskTop MovieDetail페이지  start./////////////// */
+
+.MovieDetailPage-wrap {
+  width: 100vw;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MovieDetailPage-first-line{
+  padding-top: 5%;
+}
+
+.MovieDetailPage-Img{
+  width: 100%;
+  height: 800px;
+  border-radius: 16px;
+}
+
+.MovieDetailPage-genre > span{
+  font-size: 1.3rem;
+  margin: 0 0.5% 1%;
+}
+
+.MovieDetailPage-title{
+  font-size: 3.5rem;
+}
+
+.MovieDetailPage-release-date{
+  font-size: 1.3rem;
+}
+
+.MovieDetailPage-modal > button{
+  font-size: 1.35rem;
+}
+
+.MovieDetailPage-review{
+  margin-top: 5%;
+}
+
+.MovieDetailPage-review  .MovieDetailPage-review-content{
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  max-height: 280px;
+}
+
+.MovieDetailPage-second-line{
+  padding:5%;
+}
+.recommendedMovieCard {
+  display: block;
+  width: 420px;
+  height: 200px;
+  border-radius: 16px;
+}
+.recommendedMovieCardOverlay {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 50%;
+  border-radius: 16px;
+}
+.recommendedMovieCardOverlay:hover {
+  opacity: 1;
+}
+/*//////////////////DeskTop MovieDetail페이지  start./////////////// */
+
+
+/*//////////////////DeskTop MovieDetailCard페이지  start./////////////// */
+.MovieDetailMoveCard-wrap > h2{
+  margin: 1%;
+font-size: 3rem;
+}
+.MovieDetailMoveCard-wrap {
+  display: block;
+  position: relative;
+  width: 350px;
+  height: 250px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MovieDetailMoveCard-overlay {
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  
+  padding: 5%;
+}
+.MovieDetailMoveCard-overlay:hover {
+  opacity: 1;
+}
+/* .react-multi-carousel-item:hover .HomePageCard-wrap {
+  transform: scale(1.3);
+  width: 600px;
+  height: 300px;
+} */
+
+.MovieDetailMoveCard-learn-more{
+  position: absolute;
+  bottom: 1%;
+  right: 5%;
+  font-size: 1.5rem;
+}
+
+/*//////////////////DeskTop MovieDetailCard페이지  end./////////////// */
+
+}
+/* //////////////////////////// tablet 768 ~ ///////////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* ////////////////////////===========================////////////////////////////*/
+/* //////////////////////////// ~ mobile 767 ///////////////////////////////////*/
+@media (min-width: 0px) and (max-width: 767px) {
+  @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{
+  text-decoration: none;
+  text-transform: none;
+}
+.App{
+  margin-top: 80px;
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: 'Do Hyeon', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: none;
+  text-decoration: none;
+  height: 100%;
+
+}
+.navBar{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.nav-item {  
+  text-decoration: none;
+  margin-right: 20px;
+}
+/*//////////////////DeskTop Home페이지  start./////////////// */
+.HomePage-wrap > h2{
+  margin: 1%;
+font-size: 3rem;
+}
+
+.HomePage-under-line{
+  padding-left: 2%;
+}
+.HomePage-under-line>h2{
+  margin-top:2%;
+}
+
+.banner {
+  /* width: 100%; */
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position-y: 50%; */
+}
+.banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to right, black, transparent);
+}
+.banner-info {
+  width: 50%;
+  margin-left: 30px;
+  z-index: 1;
+}
+.banner-info > h1{
+  font-size: 3rem;
+}
+.banner-info > p{
+  font-size: 1rem;
+}
+.HomePageCard-wrap {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 190px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  
+  padding: 5%;
+}
+.overlay:hover {
+  opacity: 1;
+}
+/* .react-multi-carousel-item:hover .HomePageCard-wrap {
+  transform: scale(1.3);
+  width: 600px;
+  height: 300px;
+} */
+
+.HomePageCard-learn-more{
+  /* position: absolute; */
+  bottom: 0;
+  right: 10%;
+  font-size: 1.5rem;
+}
+
+/*//////////////////DeskTop Home페이지  end./////////////// */
+
+
+
+
+
+
+/*//////////////////DeskTop Movies페이지  start./////////////// */
+.moviesPageCardWrap {
+  display: flex;
+  flex-wrap: wrap;  
+  min-height: 100vh;
+  padding-top: 5%;
+  border-radius: 16px;
+}
+.moviesPageCard::after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent); */
+}
+.moviesPageCard {
+  position: relative;
+  height: 450px;
+  width: 250px;
+  border: 1px solid black;
+  margin: 2% 0.5%;
+  border-radius: 16px;
+
+}
+.moviesPageCard-content{
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  left: 0;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5%;
+}
+.moviesPageCard-content>div{
+  margin: 1% 0;
+  /* border: 1px solid red; */
+}
+.moviesPageCard-title{
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.moviesPageCard-release-date{
+font-size: 1.2rem;
+
+}
+
+.moviesPageCard-genre{
+font-size: 1rem;
+width: 50%;
+}
+
+.moviesPageCard-overview {
+  font-size: 1rem;
+  overflow: hidden;
+  max-height: 50%;
+  width: 50%;
+  text-overflow: ellipsis;
+}
+.moviesPageCard-vote{
+font-size: 1rem;
+}
+.moviesPageCard-learn-more{
+  position: absolute;
+  bottom: 0;
+  right: 6%;
+  font-size: 1.5rem;
+}
+/*//////////////////DeskTop Movies페이지  end./////////////// */
+
+
+
+/*//////////////////DeskTop MovieDetail페이지  start./////////////// */
+
+.MovieDetailPage-wrap {
+  width: 100vw;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MovieDetailPage-first-line{
+  padding-top: 5%;
+}
+
+.MovieDetailPage-Img{
+  width: 100%;
+  min-width: 550px;
+  border-radius: 16px;
+}
+
+.MovieDetailPage-genre > span{
+  font-size: 1.3rem;
+  margin: 5% 0.5% 1%;
+}
+
+.MovieDetailPage-title{
+  font-size: 3rem;
+}
+
+.MovieDetailPage-release-date{
+  font-size: 1.3rem;
+}
+
+.MovieDetailPage-modal > button{
+  font-size: 1.2rem;
+}
+
+.MovieDetailPage-review{
+  margin-top: 5%;
+}
+
+.MovieDetailPage-review  .MovieDetailPage-review-content{
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  max-height: 300px;
+}
+
+.MovieDetailPage-second-line{
+  padding:5%;
+}
+.recommendedMovieCard {
+  display: block;
+  width: 420px;
+  height: 200px;
+  border-radius: 16px;
+}
+.recommendedMovieCardOverlay {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 50%;
+  border-radius: 16px;
+}
+.recommendedMovieCardOverlay:hover {
+  opacity: 1;
+}
+/*//////////////////DeskTop MovieDetail페이지  start./////////////// */
+
+
+/*//////////////////DeskTop MovieDetailCard페이지  start./////////////// */
+.MovieDetailMoveCard-wrap > h2{
+  margin: 1%;
+font-size: 3rem;
+}
+.MovieDetailMoveCard-wrap {
+  display: block;
+  position: relative;
+  width: 350px;
+  height: 250px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MovieDetailMoveCard-overlay {
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  
+  padding: 5%;
+}
+.MovieDetailMoveCard-overlay:hover {
+  opacity: 1;
+}
+/* .react-multi-carousel-item:hover .HomePageCard-wrap {
+  transform: scale(1.3);
+  width: 600px;
+  height: 300px;
+} */
+
+.MovieDetailMoveCard-learn-more{
+  position: absolute;
+  bottom: 1%;
+  right: 5%;
+  font-size: 1.5rem;
+}
+
+/*//////////////////DeskTop MovieDetailCard페이지  end./////////////// */
+
+
+
+}
+/* ////////////////////////////  mobile 0 ~ ///////////////////////////////////*/
