@@ -22,8 +22,8 @@ const Movies = () => {
     (state) => state.movie
   );
 
-  console.log("popularMovies", popularMovies.results);
-  console.log("moviesGenres", moviesGenres);
+  // console.log("popularMovies", popularMovies.results);
+  // console.log("moviesGenres", moviesGenres);
   // console.log(
   //   "1221212",
   //   movieYoutubeId.results[movieYoutubeId.results.length - 1].key

@@ -18,8 +18,8 @@ const Search = () => {
   const { searchMovie, moviesGenres, loading } = useSelector(
     (state) => state.movie
   );
-  console.log(params.id);
-  console.log(queryState);
+  // console.log(params.id);
+  // console.log(queryState);
   // console.log(
   //   "1221212",
   //   movieYoutubeId.results[movieYoutubeId.results.length - 1].key

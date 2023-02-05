@@ -35,7 +35,6 @@ function movieReducer(state = initialState, action) {
         loading: false,
       };
     case "GET_MOVIE_SEARCH_SUCCESS":
-      console.log(payload.searchMovie);
       return {
         ...state,
         searchMovie: payload.searchMovie,

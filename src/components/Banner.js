@@ -3,7 +3,7 @@ import "../App.css";
 import "react-multi-carousel/lib/styles.css";
 
 const Banner = ({ movie }) => {
-  console.log(movie);
+  // console.log(movie);
   return (
     <div
       className="banner"

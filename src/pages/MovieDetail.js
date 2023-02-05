@@ -23,11 +23,9 @@ const MovieDetail = () => {
     movieYoutubeId,
   } = useSelector((state) => state.movie);
 
-  console.log(params.id);
-
-  console.log(movieYoutubeId, "++++++++22222");
-
-  console.log("1221212", movieYoutubeId.results);
+  // console.log(params.id);
+  // console.log(movieYoutubeId, "++++++++22222");
+  // console.log("1221212", movieYoutubeId.results);
   const override = {
     display: "block",
     margin: "0 auto",
@@ -55,8 +53,10 @@ const MovieDetail = () => {
   };
 
   useEffect(() => {
-    dispatch(movieAction.getMovieDetail(params.id));
-  }, []);
+    if (loading == true) {
+      dispatch(movieAction.getMovieDetail(params.id));
+    }
+  }, [loading]);
 
   const goRecommendedMovies = () => {
     // console.log(item);
@@ -73,7 +73,7 @@ const MovieDetail = () => {
         backgroundColor: "rgba(0, 0, 0, 0.5)",
       }}
     >
-      {console.log(movieDetail)}
+      {/* {console.log(movieDetail)} */}
       {/* {console.log("이거랑", recommendedMovies.results)}
       {recommendedMovies.results.map((item) => console.log(item, "24441"))} */}
       {/* {console.log(

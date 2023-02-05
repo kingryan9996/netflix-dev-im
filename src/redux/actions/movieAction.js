@@ -90,7 +90,7 @@ function getSearchPage(query) {
         searchMovieApi,
         moviesGenresApi,
       ]);
-      console.log(searchMovie, "+112121212");
+      // console.log(searchMovie, "+112121212");
       dispatch({
         type: "GET_MOVIE_SEARCH_SUCCESS",
         payload: {

@@ -8,16 +8,12 @@ import { movieAction } from "../redux/actions/movieAction";
 const MovieDetailMoveCard = ({ item }) => {
   const navigate = useNavigate();
   const { moviesGenres, loading } = useSelector((state) => state.movie);
-  //   console.log(moviesGenres);
   const dispatch = useDispatch();
 
   const goMovieDetail = (item) => {
-    console.log(item);
-    dispatch(movieAction.loadingChange());
     navigate(`/movies/${item.id}`);
+    dispatch(movieAction.loadingChange());
   };
-  //   console.log("이거하고", item);
-  // poster_path
 
   return (
     <div

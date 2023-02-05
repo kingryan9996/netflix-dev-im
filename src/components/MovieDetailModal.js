@@ -2,7 +2,7 @@ import { Button, Modal } from "react-bootstrap";
 import YouTube from "react-youtube";
 
 function MovieDetailModal(props) {
-  console.log(props.movieYoutubeId);
+  // console.log(props.movieYoutubeId);
 
   const opts = {
     height: "450",
