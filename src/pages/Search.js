@@ -73,7 +73,7 @@ const Search = () => {
     return <LoadingSpiner />;
   }
   if (searchMovie.results.length == 0) {
-    return <div>찾으시는 결과가 없습니다.</div>;
+    return <div className="Nosearch">찾으시는 결과가 없습니다.</div>;
   } else {
     return (
       <div

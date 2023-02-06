@@ -14,6 +14,9 @@
   height: 100%;
 
 }
+.Nosearch{
+  font-size:  6rem;
+}
 .navBar{
   position: fixed;
   z-index: 999;
